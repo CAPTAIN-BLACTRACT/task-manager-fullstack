@@ -1,0 +1,128 @@
+/* src/components/TaskList.css */
+
+.task-list-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Adjust max-width as needed */
+  margin: 2rem auto; /* Center the component */
+}
+
+.task-list-loading, .no-tasks-message {
+  text-align: center;
+  padding: 1rem;
+  color: #555;
+}
+
+.task-list-error {
+  color: #dc2626; /* red-600 */
+  background-color: #fee2e2; /* red-100 */
+  border: 1px solid #ef4444; /* red-500 */
+  padding: 0.75rem;
+  border-radius: 0.375rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.task-list-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.task-input-form {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.new-task-input {
+  flex-grow: 1;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 0.375rem;
+  font-size: 1em;
+}
+
+.new-task-input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.add-task-button {
+  background-color: #007bff;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-task-button:hover {
+  background-color: #0056b3;
+}
+
+.tasks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+  transition: background-color 0.2s ease;
+}
+
+.task-item.completed {
+  background-color: #e6ffe6; /* Light green for completed tasks */
+  border-color: #a3e6a3; /* Green border */
+}
+
+.task-checkbox {
+  margin-right: 1rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  cursor: pointer;
+  accent-color: #007bff; /* Custom color for checkbox */
+}
+
+.task-text {
+  flex-grow: 1;
+  font-size: 1.1em;
+  color: #333;
+  word-break: break-word; /* Ensure long text wraps */
+}
+
+.task-item.completed .task-text {
+  text-decoration: line-through;
+  color: #777;
+}
+
+.delete-task-button {
+  background-color: #dc3545; /* Red color */
+  color: white;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 0.375rem;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: 1rem; /* Space from text */
+}
+
+.delete-task-button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,44 @@
+### Register User
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "testuser2",
+    "password": "password456"
+}
+
+### Login User
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "testuser2",
+    "password": "password456"
+}
+
+### Get Tasks (Replace TOKEN with your actual JWT)
+GET http://localhost:3000/tasks
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiMTc1MTU0NDY1NzY0OCIsInVzZXJuYW1lIjoidGVzdHVzZXIyIn0sImlhdCI6MTc1MTU0NDcwOCwiZXhwIjoxNzUxNTQ4MzA4fQ.La5_6ECJIc69bU00FChkgY8oQZlygH7TaqGKmVUC7cM
+
+### Create Task (Replace TOKEN)
+POST http://localhost:3000/tasks
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiMTc1MTU0NDY1NzY0OCIsInVzZXJuYW1lIjoidGVzdHVzZXIyIn0sImlhdCI6MTc1MTU0NDcwOCwiZXhwIjoxNzUxNTQ4MzA4fQ.La5_6ECJIc69bU00FChkgY8oQZlygH7TaqGKmVUC7cM
+
+{
+    "title": "Buy groceries"
+}
+
+### Update Task (Replace TASK_ID and TOKEN)
+PUT http://localhost:3000/tasks/1751544908906
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiMTc1MTU0NDY1NzY0OCIsInVzZXJuYW1lIjoidGVzdHVzZXIyIn0sImlhdCI6MTc1MTU0NDcwOCwiZXhwIjoxNzUxNTQ4MzA4fQ.La5_6ECJIc69bU00FChkgY8oQZlygH7TaqGKmVUC7cM
+
+{
+    "title": "Buy groceries",
+    "completed": true
+}
+
+### Delete Task (Replace TASK_ID and TOKEN)
+DELETE http://localhost:3000/tasks/1751544908906
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiMTc1MTU0NDY1NzY0OCIsInVzZXJuYW1lIjoidGVzdHVzZXIyIn0sImlhdCI6MTc1MTU0NDcwOCwiZXhwIjoxNzUxNTQ4MzA4fQ.La5_6ECJIc69bU00FChkgY8oQZlygH7TaqGKmVUC7cM

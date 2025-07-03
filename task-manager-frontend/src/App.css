@@ -1,0 +1,115 @@
+/* src/App.css */
+
+/* Global styles for Inter font, replacing the inline <style> tag */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0; /* Ensure no default body margin */
+  padding: 0; /* Ensure no default body padding */
+}
+
+.app-wrapper {
+  min-height: 100vh; /* min-h-screen */
+  background-color: #f3f4f6; /* bg-gray-100 */
+  display: flex; /* flex */
+  flex-direction: column; /* flex-col */
+  align-items: center; /* items-center */
+}
+
+.main-content {
+  max-width: 48rem; /* max-w-2xl */
+  margin-left: auto; /* mx-auto */
+  margin-right: auto; /* mx-auto */
+  padding: 1rem; /* p-4 */
+  flex-grow: 1; /* flex-grow */
+  width: 100%; /* w-full */
+  margin-top: 2rem; /* mt-8 */
+}
+
+.welcome-title {
+  font-size: 1.5rem; /* Corrected from 1rem to 1.5rem for better visual */
+  font-weight: 600; /* font-semibold */
+  color: #1f2937; /* text-gray-800 */
+  margin-bottom: 1.5rem; /* mb-6 */
+  text-align: center; /* text-center */
+}
+
+.info-box {
+  background-color: #ffffff; /* bg-white */
+  padding: 2rem; /* p-8 */
+  border-radius: 0.5rem; /* rounded-lg */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+  text-align: center; /* text-center */
+  color: #374151; /* text-gray-700 */
+}
+
+.info-text.mb-4 {
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.info-text-sm {
+  font-size: 0.875rem; /* text-sm */
+  color: #6b7280; /* text-gray-500 */
+}
+
+.app-footer {
+  width: 100%; /* w-full */
+  background-color: #e5e7eb; /* bg-gray-200 */
+  padding: 1rem; /* p-4 */
+  text-align: center; /* text-center */
+  color: #4b5563; /* text-gray-600 */
+  font-size: 0.875rem; /* text-sm */
+  margin-top: 2rem; /* mt-8 */
+}
+
+/* Auth section specific styles (for App.tsx conditional rendering) */
+.auth-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.toggle-auth-mode {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #4b5563;
+  text-align: center;
+}
+
+.toggle-button {
+  color: #2563eb; /* blue-600 */
+  font-weight: 500;
+  background: none;
+  border: none;
+  padding: 0;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.toggle-button:hover {
+  color: #1d4ed8; /* blue-700 */
+}
+
+.info-box .auth-form-wrapper {
+  margin-top: 1.5rem;
+}
+
+/* --- Logout Button Styles --- */
+.logout-button {
+  background-color: #dc2626; /* Red-600 */
+  color: #ffffff;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.5); /* Focus ring for red */
+}
+
+.logout-button:hover {
+  background-color: #b91c1c; /* Red-700 */
+}

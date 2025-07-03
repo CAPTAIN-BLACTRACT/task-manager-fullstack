@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es2020",         // Recommended for modern Node.js (allows for native async/await features, etc.)
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "rootDir": "./src",         // Assuming your source files are in `src`
+    "strict": true,             // Enable all strict type-checking options (good practice)
+    "skipLibCheck": true,       // Skips type checking of all declaration files (*.d.ts). Can resolve conflicts with node_modules types.
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true   // Important if you were ever directly importing JSON files
+  },
+  "include": ["src/**/*.ts"],   // Tell TypeScript to include all .ts files in the 'src' directory
+  "exclude": ["node_modules"]  // Exclude node_modules from compilation
+}

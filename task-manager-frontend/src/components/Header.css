@@ -1,0 +1,15 @@
+/* src/components/Header.css */
+
+.header {
+  background-color: #007bff; /* Blue background */
+  color: white;
+  padding: 1rem; /* Padding inside the header */
+  text-align: center; /* Centers the text horizontally */
+  font-size: 1.5rem; /* Font size for the text */
+  font-weight: 700; /* Bold font weight */
+  width: 100vw; /* CRITICAL: Ensures it takes 100% of the viewport width */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  /* Remove any margin or max-width that might be inherited or set here */
+  margin: 0;
+  box-sizing: border-box; /* Include padding/border in width calculation */
+}
